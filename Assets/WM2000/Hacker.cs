@@ -6,8 +6,8 @@ public class Hacker : MonoBehaviour {
 
 
 	//Game configuration data
-	string[] level1Passwords = {"books", "aisle", "self", "front"};
-	string[] level2Passwords = { "prison", "handcuff", "uniform", "jail" };
+	string[] level1Passwords = {"shelf", "desk", "books", "lockers"};
+	string[] level2Passwords = { "computers", "gun", "uniform", "jail" };
 		
 	//Game state
 	int level;
@@ -26,7 +26,7 @@ public class Hacker : MonoBehaviour {
 		currentScreen = Screen.MainMenu;
 		Terminal.WriteLine (greeting);
 		Terminal.WriteLine ("What would you like to hack into?");
-		Terminal.WriteLine ("Press 1 for the local library");
+		Terminal.WriteLine ("Press 1 for the local school");
 		Terminal.WriteLine ("Press 2 for the local police station");
 		Terminal.WriteLine ("Enter your selection:");
 	}
